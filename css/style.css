@@ -1,0 +1,54 @@
+header,footer{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.main-navegatio{
+    background: rgb(85, 84, 84);
+    text-align: center;
+    padding: 10px;
+}
+.hero-section,.sidebar{
+    background: #e0dede;
+    padding: 10px;
+}
+.features,.testimonlals{
+    background: #d6c7c7;
+    padding: 10px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,2fr);
+    grid-template-rows:  50px 50px 100px 50px 50px 50px;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header "
+    "main-navegatio main-navegatio main-navegatio "
+    "hero-section hero-section hero-section"
+    "features  sidebar sidebar "
+    "testimonlals sidebar sidebar "
+    "footer footer footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+.main-navegatio{
+    grid-area: main-navegatio;
+}
+.hero-section{
+    grid-area: hero-section;
+}
+.features{
+    grid-area: features;
+}
+.testimonlals{
+    grid-area: testimonlals;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+footer{
+    grid-area: footer;
+}
